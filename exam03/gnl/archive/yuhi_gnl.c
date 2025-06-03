@@ -36,7 +36,7 @@ char	*get_next_line(int fd)
 	while (1)
 	{
 		c = ft_get_char(fd);
-		if (c = -1)
+		if (c == -1)
 			break ;
 		line[i++] = (char)c;
 		if (c == '\n')
