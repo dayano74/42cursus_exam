@@ -35,9 +35,14 @@ int main(void)
 	ret = printf("%d\n", (int)-2147483648);
 	printf("ret = %d\n", ret);
 
-	ret = ft_printf("%x\n", 10);
+	ret = ft_printf("%x\n", 255);
 	printf("ret = %d\n", ret);
-	ret = printf("%x\n", 10);
+	ret = printf("%x\n", 255);
+	// printf("ret = %d\n", ret);
+
+	ret = ft_printf("%s\n", NULL);
+	printf("ret = %d\n", ret);
+	ret = printf("%s\n", (char *)NULL);
 	printf("ret = %d\n", ret);
 	return (0);
 }

@@ -52,7 +52,7 @@ char *get_next_line(int fd)
 	if (!ret)
 		return (NULL);
 	int j = 0;
-	while(j <= i)
+	while (j < i + 1)
 	{
 		ret[j] = line[j];
 		j++;
